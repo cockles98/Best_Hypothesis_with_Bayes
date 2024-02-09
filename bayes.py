@@ -2,7 +2,9 @@ import numpy as np
 from scipy.integrate import quad
 import math
 
+
 ### To remeber: the best hypotesis have the greatest evidence ###
+
 
 # Exercise 28.1
 def ex_28_1():
@@ -23,6 +25,7 @@ def ex_28_1():
     print(f"Evidence for H0: {evidence_H0}")
     print(f"Evidence for H1: {evidence_H1}")
     print('As we can see, hypotesis H1 wins')
+
 
 # Exercise 28.4
 def ex_28_4():
