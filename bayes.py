@@ -75,56 +75,49 @@ def ex_28_4():
     Occam_H01 = math.exp(-0.5 * (min_BIC - BIC_H01))
     Occam_H00 = math.exp(-0.5 * (min_BIC - BIC_H00))
     
-    # Evidence
-    prior = 0.1 # Assuming a uniform prior
-    
+    # Evidences
+    prior = 0.1
     evidence_H11 = likelihood_H11 * Occam_H11 * prior
     evidence_H10 = likelihood_H10 * Occam_H10 * prior
     evidence_H01 = likelihood_H01 * Occam_H01 * prior
     evidence_H00 = likelihood_H00 * Occam_H00 * prior
-    
     print(f"Prior: {prior}")
     print(f"Evidence for H11: {evidence_H11}")
     print(f"Evidence for H10: {evidence_H10}")
     print(f"Evidence for H01: {evidence_H01}")
     print(f"Evidence for H00: {evidence_H00}")
     
-    prior = 1 # Assuming a uniform prior
-    
+    prior = 1
     evidence_H11 = likelihood_H11 * Occam_H11 * prior
     evidence_H10 = likelihood_H10 * Occam_H10 * prior
     evidence_H01 = likelihood_H01 * Occam_H01 * prior
     evidence_H00 = likelihood_H00 * Occam_H00 * prior
-    
     print(f"Prior: {prior}")
     print(f"Evidence for H11: {evidence_H11}")
     print(f"Evidence for H10: {evidence_H10}")
     print(f"Evidence for H01: {evidence_H01}")
     print(f"Evidence for H00: {evidence_H00}")
     
-    prior = 10 # Assuming a uniform prior
-    
+    prior = 10
     evidence_H11 = likelihood_H11 * Occam_H11 * prior
     evidence_H10 = likelihood_H10 * Occam_H10 * prior
     evidence_H01 = likelihood_H01 * Occam_H01 * prior
     evidence_H00 = likelihood_H00 * Occam_H00 * prior
-    
     print(f"Prior: {prior}")
     print(f"Evidence for H11: {evidence_H11}")
     print(f"Evidence for H10: {evidence_H10}")
     print(f"Evidence for H01: {evidence_H01}")
     print(f"Evidence for H00: {evidence_H00}")
     
-    prior = 100 # Assuming a uniform prior
-    
+    prior = 100
     evidence_H11 = likelihood_H11 * Occam_H11 * prior
     evidence_H10 = likelihood_H10 * Occam_H10 * prior
     evidence_H01 = likelihood_H01 * Occam_H01 * prior
     evidence_H00 = likelihood_H00 * Occam_H00 * prior
-    
     print(f"Prior: {prior}")
     print(f"Evidence for H11: {evidence_H11}")
     print(f"Evidence for H10: {evidence_H10}")
     print(f"Evidence for H01: {evidence_H01}")
     print(f"Evidence for H00: {evidence_H00}")
+    
     print('We can check that the classification of hypotheses remains the same regardless of the Prior, and hypothesis H11 wins')
